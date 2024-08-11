@@ -1,0 +1,26 @@
+{
+  "name": "wgdashboard-electronjsapp",
+  "version": "4.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron start": "electron .",
+    "electron dist": "electron-builder"
+  },
+  "build": {
+    "appId": "wgdashboard.donaldzou.app",
+    "copyright": "Copyright © 2024 ${author}",
+    "productName": "WGDashboard Desktop",
+    "dmg": {
+      "title": "${productName} ${version}",
+      "backgroundColor": "#1b1e21",
+      "icon": "favicon.png"
+    }
+  },
+  "author": "Donald Zou",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  }
+}
