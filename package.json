@@ -3,18 +3,40 @@
   "version": "4.0.0",
   "description": "",
   "main": "index.js",
+  "productName": "WGDashboard Desktop",
   "scripts": {
     "electron start": "electron .",
-    "electron dist": "electron-builder"
+    "electron dist": "electron-builder --mac --win"
   },
   "build": {
     "appId": "wgdashboard.donaldzou.app",
     "copyright": "Copyright © 2024 ${author}",
     "productName": "WGDashboard Desktop",
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ]
+    },
     "dmg": {
       "title": "${productName} ${version}",
       "backgroundColor": "#1b1e21",
       "icon": "favicon.png"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
     }
   },
   "author": "Donald Zou",

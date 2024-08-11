@@ -1,5 +1,3 @@
 const { contextBridge } = require('electron')
 
-contextBridge.exposeInMainWorld('electron', {
-    
-})
+contextBridge.exposeInMainWorld('IS_WGDASHBOARD_DESKTOP', true)

@@ -9,7 +9,7 @@ const createWindow = () => {
 			preload: path.join(__dirname, 'preload.js')
 		}
 	})
-
+	win.maximize();
 	win.loadFile('index.html')
 
 	win.isElectron = true
@@ -20,5 +20,5 @@ app.whenReady().then(() => {
 })
 
 app.on('window-all-closed', () => {
-	if (process.platform !== 'darwin') app.quit()
+	app.quit()
 })
