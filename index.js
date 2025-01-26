@@ -3,7 +3,7 @@ const path = require('node:path')
 
 const createWindow = () => {
 	const win = new BrowserWindow({
-		width: 1366,
+		width: 1024,
 		height: 768,
 		webPreferences: {
 			preload: path.join(__dirname, 'preload.js')
@@ -11,7 +11,6 @@ const createWindow = () => {
 	})
 	win.maximize();
 	win.loadFile('index.html')
-
 	win.isElectron = true
 }
 
