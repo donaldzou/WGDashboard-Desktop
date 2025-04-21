@@ -1,6 +1,6 @@
 {
   "name": "wgdashboard-electronjsapp",
-  "version": "4.1.4",
+  "version": "4.2.0",
   "description": "",
   "main": "index.js",
   "productName": "WGDashboard Desktop",
@@ -24,10 +24,15 @@
     },
     "dmg": {
       "title": "${productName} ${version}",
-      "backgroundColor": "#1b1e21",
-      "icon": "favicon.png"
+      "background": "background.png",
+      "icon": "icon.png",
+      "window": {
+        "width": 540,
+        "height": 380
+      }
     },
     "win": {
+      "icon": "favicon.png",
       "target": [
         {
           "target": "nsis",

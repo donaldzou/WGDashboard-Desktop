@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="WGDashboard" src="icon.png" width="128">
+  <img alt="WGDashboard" src="img/Logo-1-Rounded-256x256.png" width="128px">
 </p>
 <h1 align="center">WGDashboard Desktop</h1>
 <p align="center">
